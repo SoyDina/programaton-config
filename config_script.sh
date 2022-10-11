@@ -38,3 +38,5 @@ sed "s,SED_USER,$SED_USER, ; s,SED_DESKTOP,$SED_DESKTOP, ; s,SED_CSS,$SED_CSS, ;
 cp $CONFIG_DIR/transient_output.ini $HOME/.config/spyder-py3/config/transient.ini
 cp $CONFIG_DIR/spyder_output.ini $HOME/.config/spyder-py3/config/spyder.ini
 
+sed "s,SPYDER_BIN,$SPYDER_BIN, ; s,CONFIG_DIR,$CONFIG_DIR," $CONFIG_DIR/Spyder_input.desktop > $CONFIG_DIR/Spyder_output.desktop
+

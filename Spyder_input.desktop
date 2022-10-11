@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=5.3
+Name=Spyder
+Comment=Editor de texto para Python
+Exec=SPYDER_BIN
+Icon=CONFIG_DIR/spyder-logo.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
