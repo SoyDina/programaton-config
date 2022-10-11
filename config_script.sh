@@ -43,4 +43,4 @@ chmod +x $CONFIG_DIR/exec_spyder.sh
 sed "s,SPYDER_BASH,$CONFIG_DIR/exec_spyder.sh, ; s,CONFIG_DIR,$CONFIG_DIR," $CONFIG_DIR/Spyder_input.desktop > $CONFIG_DIR/Spyder_output.desktop
 chmod +x $CONFIG_DIR/Spyder_output.desktop
 cp $CONFIG_DIR/Spyder_output.desktop $HOME/.local/share/applications/Spyder.desktop
-
+cp $CONFIG_DIR/checkpoint.py ./checkpoint.py
