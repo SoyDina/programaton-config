@@ -39,6 +39,8 @@ cp $CONFIG_DIR/transient_output.ini $HOME/.config/spyder-py3/config/transient.in
 cp $CONFIG_DIR/spyder_output.ini $HOME/.config/spyder-py3/config/spyder.ini
 
 sed -i "s,SPYDER_BIN,$SPYDER_BIN," $CONFIG_DIR/exec_spyder.sh
+chmod +x $CONFIG_DIR/exec_spyder.sh
 sed "s,SPYDER_BASH,$CONFIG_DIR/exec_spyder.sh, ; s,CONFIG_DIR,$CONFIG_DIR," $CONFIG_DIR/Spyder_input.desktop > $CONFIG_DIR/Spyder_output.desktop
+chmod +x $CONFIG_DIR/Spyder_output.desktop
 cp $CONFIG_DIR/Spyder_output.desktop $HOME/.local/share/applications/Spyder.desktop
 
