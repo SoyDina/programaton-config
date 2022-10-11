@@ -28,7 +28,7 @@ rm -rf programaton ; mkdir programaton ; cd programaton
 
 touch programaton.py
 
-CSS_PATH=$(cat $HOME/.config/spyder-py3/config/spyder.ini | grep css | awk '{ print $3 }')
+SED_CSS=$(cat $HOME/.config/spyder-py3/config/spyder.ini | grep css | awk '{ print $3 }')
 echo 'CSS PATH'
 echo $SED_CSS
 
