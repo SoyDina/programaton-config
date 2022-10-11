@@ -2,7 +2,7 @@
 Version=5.3
 Name=Spyder
 Comment=Editor de texto para Python
-Exec=SPYDER_BIN
+Exec=SPYDER_BASH
 Icon=CONFIG_DIR/spyder-logo.png
 Terminal=false
 Type=Application
