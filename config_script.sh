@@ -27,7 +27,6 @@ echo $SED_PYTHON
 
 ## Elimina la carpeta programaton si ya existía y crea programaton.py ##
 rm -rf programaton ; mkdir programaton ; cd programaton
-touch programaton.py
 
 ## Se fija el path del css del spyder ##
 SED_CSS=$(cat $HOME/.config/spyder-py3/config/spyder.ini | grep css | awk '{ print $3 }')
@@ -48,4 +47,5 @@ chmod +x $CONFIG_DIR/exec_spyder.sh
 sed "s,SPYDER_BASH,$CONFIG_DIR/exec_spyder.sh, ; s,CONFIG_DIR,$CONFIG_DIR," $CONFIG_DIR/Spyder_input.desktop > $CONFIG_DIR/Spyder_output.desktop
 chmod +x $CONFIG_DIR/Spyder_output.desktop
 cp $CONFIG_DIR/Spyder_output.desktop $HOME/.local/share/applications/Spyder.desktop
-cp $CONFIG_DIR/checkpoint.py ./checkpoint.py
+
+cp $CONFIG_DIR/programaton/* ./
