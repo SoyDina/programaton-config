@@ -31,7 +31,7 @@ echo $SED_PYTHON
 rm -rf programaton ; mkdir programaton ; cd programaton
 
 ## Seteo Spyder como el default editor de texto TERMINAR
-{ [[ -f $HOME/.local/share/applications/mimeapps.list ]] && echo existe; } || { cp $CONFIG_DIR/mimeapps.list $HOME/.local/share/applications/; }
+{ [[ -f $HOME/.local/share/applications/mimeapps.list ]] && echo 'text/x-python=Spyder.desktop;' >> $HOME/.local/share/applications/mimeapps.list; } || { cp $CONFIG_DIR/mimeapps.list $HOME/.local/share/applications/; }
 
 ## Se fija el path del css del spyder ##
 SED_CSS=$(cat $HOME/.config/spyder-py3/config/spyder.ini | grep css | awk '{ print $3 }')
