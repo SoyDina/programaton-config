@@ -5,6 +5,8 @@ CONFIG_DIR=$(pwd)
 echo 'CONFIG dir'
 echo $CONFIG_DIR
 
+[ -d $HOME/.config/spyder-py3 ] || { cp $CONFIG_DIR/spyder-py3 $HOME/.config/ -r && echo 'Spyder config copiada' }
+
 ## GUARDA EL USER ##
 SED_USER=$(whoami)
 echo 'SED user:'
