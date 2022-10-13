@@ -51,3 +51,4 @@ chmod +x $CONFIG_DIR/Spyder_output.desktop
 cp $CONFIG_DIR/Spyder_output.desktop $HOME/.local/share/applications/Spyder.desktop
 
 cp $CONFIG_DIR/programaton/* ./
+cp $CONFIG_DIR/programaton/programaton.py $HOME/$SED_DESKTOP/
