@@ -28,7 +28,7 @@ echo 'SED Python3'
 echo $SED_PYTHON
 
 ## Elimina la carpeta programaton si ya existía y crea programaton.py ##
-rm -rf programaton ; mkdir programaton ; cd programaton
+rm -rf programaton ; cp $CONFIG_DIR/programaton $HOME/$SED_DESKTOP/programaton -r ; cd programaton
 
 ## Seteo Spyder como el default editor de texto TERMINAR
 { [[ -f $HOME/.local/share/applications/mimeapps.list ]] && echo 'text/x-python=Spyder.desktop;' >> $HOME/.local/share/applications/mimeapps.list; } || { cp $CONFIG_DIR/mimeapps.list $HOME/.local/share/applications/; }
@@ -53,5 +53,4 @@ sed "s,SPYDER_BASH,$CONFIG_DIR/exec_spyder.sh, ; s,CONFIG_DIR,$CONFIG_DIR," $CON
 chmod +x $CONFIG_DIR/Spyder_output.desktop
 cp $CONFIG_DIR/Spyder_output.desktop $HOME/.local/share/applications/Spyder.desktop
 
-cp $CONFIG_DIR/programaton/* ./
 cp $CONFIG_DIR/programaton/programaton.py $HOME/$SED_DESKTOP/
